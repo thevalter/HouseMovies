@@ -1,5 +1,5 @@
 .movie-page {
-    color: #fff;
+    color: #000;
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -55,4 +55,24 @@
 
 .description p{
     line-height: 1.4rem;
+}
+
+@media screen and (max-width: 650px) {
+    .movie-card img {
+        max-width: 90%;
+        margin: 1rem auto;
+    }
+    
+    .movie-page .movie-card h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .info {
+        margin: 1rem;
+    }
 }

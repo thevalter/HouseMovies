@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #121212;
 }
 
 #navbar h2 a{
@@ -14,29 +13,52 @@
 
 #navbar form{
     display: flex;
+    justify-content: flex-end;
     gap: .5rem;
 }
 
 #navbar input{
     padding: .2rem .8rem;
     border-radius: 4px;
-    border: none;
+    border: 2px solid #000000;
 }
 
 #navbar form button {
-    background-color: #f7d354;
-    border: 2px solid #f7d354;
     border-radius: 4px;
-    color: #000;
+    border: none;
+    color: #000000;
     padding: .3rem;
     font-size: 1.3rem;
     display: flex;
     align-items: center;
     cursor: pointer;
     transition: .4s;
+    background-color: transparent;
 }
 
 #navbar form button:hover{
-    background-color: transparent;
-    color: #f7d354;
+    scale: 1.1;
+}
+
+@media screen and (max-width: 600px) {
+    #navbar {
+        padding: 1rem .7rem;
+    }
+
+    #navbar h2 a{
+        font-size: 1.3rem;
+    }
+
+    #navbar form{
+        gap: .2rem;
+    }
+
+    #navbar input{
+        padding: .2rem .5rem;
+        max-width: 60%;
+    }
+
+    #navbar form button {
+        font-size: .9rem;
+    }
 }

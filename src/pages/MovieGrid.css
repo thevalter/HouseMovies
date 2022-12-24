@@ -1,4 +1,4 @@
-.container .title{
+.container .title {
     color: #fff;
     font-size: 2.5rem;
     text-align: center;
@@ -11,7 +11,7 @@
 
 .movies-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     padding: 2rem;
     max-width: 1200px;
@@ -20,13 +20,15 @@
 
 .movies-container div {
     width: 29%;
-    color: #fff;
-    margin-bottom: 2.5rem;
+    color: #000;
+    margin: 1.5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #111;
     padding: 1rem;
+    background: #e3dbdb75;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 .movies-container div img {
@@ -39,7 +41,7 @@
     margin-bottom: 1rem;
 }
 
-.movies-container div svg{
+.movies-container div svg {
     color: #f7d354;
 }
 
@@ -54,7 +56,39 @@
     font-weight: bold;
 }
 
-.movies-container div a:hover{
+.movies-container div a:hover {
     background-color: transparent;
     color: #f7d354;
+}
+
+@media screen and (max-width: 720px) {
+
+    .container .title {
+        font-size: 1.3rem;
+
+    }
+
+    .movies-container div {
+        width: 42%;
+    }
+
+    .movie-card h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .container .title {
+        font-size: 1.2rem;
+
+    }
+
+    .movies-container div {
+        width: 70%;
+    }
+
+    .movie-card h2 {
+        font-size: 1rem;
+    }
 }
